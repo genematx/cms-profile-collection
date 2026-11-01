@@ -47,7 +47,7 @@ tiled_inserter = BufferingWrapper(tiled_inserter)  # in-process queue
 
 nslsii.configure_base(get_ipython().user_ns,
                       tiled_inserter,
-                      publish_documents_with_kafka=True,
+                      publish_documents_with_kafka="cms",
                       redis_url="xf11bm-cms-redis1.nsls2.bnl.gov",
                       redis_port=6380,
                       redis_ssl=True)
